@@ -6,6 +6,8 @@ body {
     flex-wrap: wrap;
     background-image: url("../fond.webp");
     background-size: cover;
+    font-family: 'Inter', sans-serif;
+
 }
 
 /** THEME*/
