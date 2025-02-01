@@ -1,0 +1,22 @@
+/** BODY **/
+body{
+    overflow: hidden;
+}
+/** NAV **/
+#navBar{
+    position: absolute;
+    bottom: 30px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#navBar > div{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+} 

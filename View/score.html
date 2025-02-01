@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../CSS/score.css" />
+    <script src="../JS/score.js"></script>
+    <script src="../JS/chrono.js"></script>
+    <title>Kazou</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+
+<body>
+    <input class="theme" type="text" placeholder="Theme" />
+    <div id="scoreContainer">
+        <div id="headerScore">
+            Match
+        </div>
+        <div id="score">
+            <div id="scoreLitho">
+                <div class="up" id="upLitho" onclick="ajoutPoint(this.id)">
+                </div>
+                <div class="total" id="totalLitho">0</div>
+                <div class="down" id="downLitho" onclick="retraitPoint(this.id)">
+                </div>
+            </div>
+            <div id="scoreVisiteur">
+                <div class="up" id="upVisiteur" onclick="ajoutPoint(this.id)">
+                    <i class="arrow up"></i>
+                </div>
+                <div class="total" id="totalVisiteur">0</div>
+                <div class="down" id="downVisiteur" onclick="retraitPoint(this.id)">
+                    <i class="arrow down"></i>
+                </div>
+            </div>
+        </div>
+        <div id="faute">
+            <div id="fauteLitho">
+                <div id="faute1Litho" onclick="compterFaute(this)">
+                    <div class="toLeft">a</div>
+                    <div class="toRight">a</div>
+                </div>
+                <div id="faute2Litho" onclick="compterFaute(this)">
+                    <div class="toLeft">a</div>
+                    <div class="toRight">a</div>
+                </div>
+                <div id="faute3Litho" onclick="compterFaute(this)">
+                    <div class="toLeft">a</div>
+                    <div class="toRight">a</div>
+                </div>
+            </div>
+            <div id="fauteVisiteur">
+                <div id="faute1Visiteur" onclick="compterFaute(this)">
+                    <div class="toLeft">a</div>
+                    <div class="toRight">a</div>
+                </div>
+                <div id="faute2Visiteur" onclick="compterFaute(this)">
+                    <div class="toLeft">a</div>
+                    <div class="toRight">a</div>
+                </div>
+                <div id="faute3Visiteur" onclick="compterFaute(this)">
+                    <div class="toLeft">a</div>
+                    <div class="toRight">a</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timer">
+        <div class="impro">
+            <h1>Durée</h1>
+            <div id="chronoImpro" class="chrono">
+                <input id="minImpro" class="min" type="number" min="0" max="10" placeholder="03">
+                <p class="separateur">:</p>
+                <input id="secImpro" class="sec" type="number" min="00" max="60" placeholder="00">
+            </div>
+            <h1 id="buttonImpro" onclick="timer('Impro')">Lancer</h1>
+        </div>
+        <div class="impro">
+            <h1>Periode</h1>
+            <div id="chronoPer" class="chrono">
+                <input id="minPer" class="min" type="number" min="0" max="60" placeholder="45">
+                <p class="separateur">:</p>
+                <input id="secPer" class="sec" type="number" min="00" max="60" placeholder="00">
+            </div>
+            <h1 id="buttonPer" onclick="timer('Per')">Lancer</h1>
+        </div>
+    </div>
+</body>

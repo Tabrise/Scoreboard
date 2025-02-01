@@ -1,0 +1,227 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../fond.webp");
+    background-size: cover;
+}
+
+/** THEME*/
+
+.theme {
+    font-family: 'Inter', sans-serif;
+    font-size: 75px;
+    border: none transparent;
+    outline: none;
+    text-align: center;
+    font-weight: 900;
+    padding: 3% 0 3% 0;
+}
+
+/**SCORE*/
+#scoreContainer {
+    display: flex;
+    flex-direction: column;
+    width: 497px;
+    height: 320px;
+    background: #F3F3F3;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+#headerScore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    flex-basis: 10%;
+    background: #262626;
+    color: white;
+    font-size: 35px;
+
+}
+
+#score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 80%;
+}
+
+#score>div {
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 155px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 248px;
+    height: 100%;
+    color: #000000;
+}
+
+#score>div:first-child {
+    background-color: #F3F3F3;
+}
+
+.up,
+.down {
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.up:hover,
+.down:hover {
+    background-image: url("../fleche.svg");
+}
+
+.down:hover {
+    transform: rotate(180deg);
+}
+
+.total {
+    position: absolute;
+    user-select: none;
+}
+
+#scoreVisiteur {
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/** FAUTE */
+#faute {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex-basis: 10%;
+    background: #FF5A5A;
+}
+
+#faute>div {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 25px;
+
+    width: 248.5px;
+    height: 100%;
+}
+
+.toLeft,
+.toRight {
+    height: 30px;
+    width: 4px;
+    font-size: 0%;
+    color: #AD2B2B;
+    position: absolute;
+    background: #AD2B2B;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.toLeft {
+    transform: rotate(45deg);
+}
+
+.toRight {
+    transform: rotate(-45deg);
+}
+
+/** TIMER **/
+#timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    padding-top: 2%;
+}
+
+.impro {
+    background: #F3F3F3;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 219px;
+    height: 143px;
+}
+
+.impro>h1:first-child {
+    flex-basis: 10%;
+    text-transform: uppercase;
+    color: #F3F3F3;
+    background-color: #262626;
+    margin: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+}
+
+.impro>h1:last-child {
+    flex-basis: 10%;
+    text-transform: uppercase;
+    color: #F3F3F3;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0px;
+    text-align: center;
+    background-color: #FF5A5A;
+    cursor: pointer;
+}
+
+.chrono {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 70px;
+}
+
+.separateur {
+    font-size: 35px;
+}
+
+.min {
+    width: 50px;
+}
+
+.sec {
+    width: 60px;
+}
+
+.min,
+.sec {
+    border: none transparent;
+    outline: none;
+    background-color: #F3F3F3;
+    font-size: 35px;
+}
+
+.run {
+    font-size: 35px;
+}
+
+.pause:hover{
+    background-image: url("../pause.svg");
+    cursor: pointer;
+    z-index: 1;
+}
+
+.play:hover{
+    background-image: url("../play.svg");
+    cursor: pointer;
+    z-index: 1;
+}

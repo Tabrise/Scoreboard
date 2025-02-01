@@ -1,0 +1,36 @@
+.arrow-up{
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
+}
+
+.arrow-down{
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+}
+.arrow-down:hover{
+    background-color: black;
+    border-bottom: 20px solid black;
+    
+    
+}
+.arrow-up:hover{
+    background-color: black;    
+    border-top: 20px solid black;
+
+
+}
+
+#box{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
